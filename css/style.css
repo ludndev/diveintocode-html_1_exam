@@ -163,7 +163,7 @@ body {
 /*
  * contact
  */
-.contact input[type="text"], .contact textarea {
+.contact input[type="text"], .contact input[type="email"], .contact textarea {
 	width: 100%;
 	margin: 10px 0px;
 	margin-left: 10px;
