@@ -1,0 +1,214 @@
+@charset "UTF-8";
+
+:root { 
+	--color-white: #FFF;
+
+	--bg-pink: #F5B4B3;
+	--bg-footer: #4C4C4C;
+	--bg-article: #FCE8E7;
+	--bg-active: #FAEAEA;
+}
+
+*, html {
+	margin: 0;
+	font-family: arial,helvetica;
+	font-size: 62.5%;
+}
+
+/*
+ *
+ */
+
+body {
+	width: 980px;
+	margin: 0 auto;
+	display: flex;
+    flex-wrap: wrap;
+}
+
+/* link, button ... active state */
+.active {
+	opacity: 0.6;
+}
+.active a {
+	background-color: #FCECEC !important;
+	color: #4D4D4D !important;
+}
+
+/*
+ *
+ */
+
+
+.header .logo {
+    width: 110px;
+    height: 100%;
+    float: left;
+    margin: 0;
+}
+
+.header nav {
+	height: 50px;
+	width: 100%;
+	background-color: var(--bg-pink);
+	color: var(--color-white);
+}
+
+.header nav ul {
+	list-style-type: none;
+	padding: 0px;
+	display: block;
+	float: right;
+}
+
+.header nav li {
+	display: inline;
+}
+
+.header nav li a {
+	color: var(--color-white);
+	text-decoration: none;
+	padding: 15px 20px;
+	text-align: center;
+	font-size: 2rem;
+	display: inline-block;
+}
+
+.header img {
+	width: 100%;
+} 
+
+/*
+ *
+ */
+
+.side_menu {
+	width: 300px;
+	min-height: 500px;
+}
+
+.side_menu ul {
+	list-style-type: none;
+	padding: 0px;
+}
+
+.side_menu ul li {
+	margin: 10px 0px;
+}
+
+.side_menu ul li a {
+	color: var(--color-white);
+	font-size: 2rem;
+	text-decoration: none;
+	padding: 16px 0px;
+	text-align: center;
+	display: inline-block;
+	background-color: var(--bg-pink);
+	width: 100%;
+}
+
+
+.side_menu img {
+	width: 100%;
+}
+
+
+.content {
+	margin-top: 10px;
+	margin-left: 30px;
+	width: 650px;
+}
+
+.content div {
+	padding: 20px;
+}
+
+.content .home {
+	background-color: var(--bg-article);
+}
+
+.content img {
+	width: 100%;
+}
+
+/*
+ *
+ */
+
+.footer {
+	height: 100px;
+    width: 980px;
+    background-color: var(--bg-footer);
+    color: var(--color-white);
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+}
+
+
+
+/*
+ * home
+ */
+.content .home {
+	font-size: 4rem;
+}
+
+
+
+
+/*
+ * contact
+ */
+.contact input[type="text"], .contact textarea {
+	width: 100%;
+	margin: 10px 0px;
+	margin-left: 10px;
+}
+
+.contact textarea {
+	height: 7rem;
+}
+
+.label {
+	font-size: 2rem;
+	width: 150px;
+	right: 0 !important;
+	margin: 10px;
+}
+.input {
+	font-size: 2rem;
+	width: 480px;
+}
+
+.label p {
+	font-size: 2rem;
+	float: right;
+}
+
+#multiChoice {
+	padding-left: 10px;
+}
+
+.submitBtn {
+	margin: auto;
+	text-align: center;
+	width: 100%;
+}
+
+.submitBtn button {
+	height: 7rem;
+	padding: 10px;
+	color: #fff;
+	background-color: #008B8B;
+	font-size: 2rem;
+}
+
+.submitBtn button:hover {
+	opacity: 0.6;
+}
+
+
